@@ -1,20 +1,67 @@
-##Backend (hotel-management-server)
-Spring Boot: Uses Spring Boot to create a RESTful API for handling hotel management operations.
-Data Access: Uses Spring Data JPA with H2 database for storing and retrieving hotel data.
-REST API: Provides endpoints for managing bookings, rooms, guests, and staff.
-Authentication: (Optional) Can be extended to include authentication and authorization mechanisms for secure access.
-Error Handling: Includes error handling to provide informative responses to client requests.
-##Frontend (hotel-management-client)
-React: Uses React for building a user-friendly interface for managing hotel operations.
-React Components: Includes reusable components for managing bookings, rooms, guests, and staff.
-API Integration: Uses fetch API to communicate with the Spring Boot backend and fetch data.
-State Management: (Optional) May use Redux or Context API for managing the application state.
-UI: Provides a modern and user-friendly interface for managing hotel data.
-##Technologies Used
-Java: For the backend development.
-Spring Boot: For building the RESTful API.
-Spring Data JPA: For data persistence.
-H2 Database: For storing hotel data.
-JavaScript: For the frontend development.
-React: For building the user interface.
-CSS: For styling the user interface.
+# Hotel Management System
+
+A full-stack hotel management application built using **Spring Boot** for the backend and **React** for the frontend. This project allows hotel staff to manage room bookings, customers, and hotel services efficiently.
+
+## Project Structure
+
+hotel-management-system/ ├── hotel-management-server/ # Backend (Spring Boot) ├── hotel-management-client/ # Frontend (React) └── README.md # Project documentation
+
+
+## Features
+
+- **Room Management**: Add, update, and delete room information, including room types, availability, and pricing.
+- **Customer Management**: Manage customer check-ins and check-outs, customer profiles, and booking history.
+- **Booking Management**: Book rooms for customers, update bookings, and cancel reservations.
+- **Service Management**: Manage hotel services like room service, housekeeping, and other amenities.
+- **Authentication**: Secure login and role-based access control for admins and hotel staff.
+- **Responsive UI**: Frontend built using React with a responsive design for mobile and desktop.
+
+## Technology Stack
+
+### Backend (hotel-management-server)
+
+- **Java 11+**
+- **Spring Boot 3**
+  - Spring MVC (REST APIs)
+  - Spring Data JPA (Database interactions)
+  - Spring Security (Authentication & Authorization)
+- **MySQL** (or PostgreSQL) - For storing data
+- **JPA/Hibernate** - ORM for database management
+- **Maven** - Dependency management and build tool
+
+### Frontend (hotel-management-client)
+
+- **React 18** with modern hooks
+- **React Router** - For routing
+- **Axios** - For making HTTP requests to the backend
+- **Material-UI** - For a clean and responsive UI
+- **Vite** (or Create React App) - For React project setup
+
+## Getting Started
+
+### Prerequisites
+
+- **Java 11+** installed
+- **Node.js 16+** installed
+- **MySQL** or **PostgreSQL** installed
+- **Maven** and **npm** installed
+
+### Clone the repository
+
+```bash
+git clone https://github.com/yourusername/hotel-management-system.git
+cd hotel-management-system
+```
+
+### Backend setup
+
+
+cd hotel-management-server
+mvn clean install
+mvn spring-boot:run
+
+### front setup
+
+cd ../hotel-management-client
+npm install
+
