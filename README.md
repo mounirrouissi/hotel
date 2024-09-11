@@ -1,6 +1,8 @@
 # Hotel Management System
 
 A full-stack hotel management application built using **Spring Boot** for the backend and **React** for the frontend. This project allows hotel staff to manage room bookings, customers, and hotel services efficiently.
+<img width="947" alt="hotel" src="https://github.com/user-attachments/assets/249b35b7-59ff-4d46-bdcd-a415bf805b34">
+
 
 ## Project Structure
 
